@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="rmbback"
+  id="myeclipse.1319601500356"
+  context-root="/rmbback"
+  j2ee-spec="1.4"
+  archive="rmbback.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

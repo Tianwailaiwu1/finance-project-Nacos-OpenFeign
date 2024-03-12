@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="micr-api" />
+        <module name="micr-task" />
+        <module name="micr-web" />
+        <module name="micr-dataservice" />
+        <module name="micr-pay" />
+        <module name="kq-demo" />
+        <module name="micr-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kq-demo" target="1.5" />
+      <module name="micr-api" target="1.8" />
+      <module name="micr-common" target="1.8" />
+      <module name="micr-dataservice" target="1.8" />
+      <module name="micr-parent" target="1.8" />
+      <module name="micr-pay" target="1.8" />
+      <module name="micr-task" target="1.8" />
+      <module name="micr-web" target="1.8" />
+      <module name="ready-mapper" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="micr-api" options="-parameters" />
+      <module name="micr-common" options="-parameters" />
+      <module name="micr-dataservice" options="-parameters" />
+      <module name="micr-parent" options="-parameters" />
+      <module name="micr-pay" options="-parameters" />
+      <module name="micr-task" options="-parameters" />
+      <module name="micr-web" options="-parameters" />
+    </option>
+  </component>
+</project>

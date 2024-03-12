@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="FI"
+  id="myeclipse.1550211256978"
+  context-root="/FI"
+  j2ee-spec="5.0"
+  archive="FI.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

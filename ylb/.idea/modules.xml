@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kq-demo.iml" filepath="$PROJECT_DIR$/kq-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-api.iml" filepath="$PROJECT_DIR$/micr-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-common.iml" filepath="$PROJECT_DIR$/micr-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-dataservice/micr-dataservice.iml" filepath="$PROJECT_DIR$/micr-dataservice/micr-dataservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-parent.iml" filepath="$PROJECT_DIR$/micr-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-pay/micr-pay.iml" filepath="$PROJECT_DIR$/micr-pay/micr-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-task/micr-task.iml" filepath="$PROJECT_DIR$/micr-task/micr-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-web/micr-web.iml" filepath="$PROJECT_DIR$/micr-web/micr-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ylb.iml" filepath="$PROJECT_DIR$/ylb.iml" />
+    </modules>
+  </component>
+</project>

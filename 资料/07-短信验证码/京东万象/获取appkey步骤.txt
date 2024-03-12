@@ -1,0 +1,15 @@
+
+
+appkey
+3680fa919b771148da626bbcbd459475
+
+
+{"code":"10000","charge":false,"remain":0,"msg":"查询成功","result":"<?xml version=\"1.0\" encoding=\"utf-8\" ?><returnsms>\n <returnstatus>Success</returnstatus>\n <message>ok</message>\n <remainpoint>-6947998</remainpoint>\n <taskID>164262906</taskID>\n <successCounts>1</successCounts></returnsms>"}
+
+
+https://way.jd.com/kaixintong/kaixintong?mobile=18600296631&content=【凯信通】您的验证码是：123456&appkey=3680fa919b771148da626bbcbd459475
+
+appkey的获取：
+1）注册用户，使用手机号
+2）选择106短信获取其他的服务接口，弹出窗口要 认证（个人认证，企业认证）
+3）填写姓名，手机号，邮箱后认证成功。 弹出 appkey 。 记录下来

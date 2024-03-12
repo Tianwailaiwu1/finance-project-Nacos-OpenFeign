@@ -1,0 +1,12 @@
+轻量级倒计时 leftTime.js
+https://demo.demohuo.top/jquery/30/3058/demo/
+
+
+	
+$.leftTime(60,function(d){
+//d.status,值true||false,倒计时是否结束;
+//d.s,倒计时秒;
+});
+
+d.status: true 在进行倒计时
+d.status :fasle 倒计时结束

@@ -1,0 +1,42 @@
+成都创信信息技术有限公司：
+https://wx.jdcloud.com/market/datas/5/10665
+
+=================================================================
+接口请求返回：
+{
+	"code": "10000",
+	"charge": false,
+	"remain": 0,
+	"msg": "查询成功",
+	"result": {
+		"ReturnStatus": "Success",
+		"Message": "ok",
+		"RemainPoint": 1274821,
+		"TaskID": 67623804,
+		"SuccessCounts": 1
+	},
+	"requestId": "7853d0b2ba36489aab9fdb92f851ad16"
+}
+
+=================================================================
+问题：
+如果出现以下错误：
+{
+	"code": "10000",
+	"charge": false,
+	"remain": 0,
+	"msg": "查询成功",
+	"result": {
+		"ReturnStatus": "Faild",
+		"Message": "短信必须带【】格式签名",
+		"RemainPoint": 0,
+		"TaskID": 0,
+		"SuccessCounts": 0
+	},
+	"requestId": "4d6291789a13456e8526eb9e5a6d26f9"
+}
+
+解决： Consts.UTF_8 ：编码指定
+HttpEntity entity = new UrlEncodedFormEntity(params,Consts.UTF_8);
+
+

@@ -1,0 +1,16 @@
+#服务配置
+spring:
+  application:
+    name: micr-task
+#Dubbo配置
+dubbo:
+  registry:
+    address: zookeeper://192.168.5.129:2181
+  scan:
+    base-packages: com.zzt.micrtask
+  consumer:
+    check: false
+    timeout: 50000
+    retries: 0
+  config-center:
+    timeout: 5000

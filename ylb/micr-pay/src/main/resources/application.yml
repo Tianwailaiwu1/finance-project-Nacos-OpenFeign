@@ -1,0 +1,27 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /pay
+
+#关闭模板引擎缓存
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: micr-pay
+#redis配置
+  redis:
+    host: 192.168.5.129
+    port: 6379
+#Dubbo配置
+dubbo:
+  registry:
+    address: zookeeper://192.168.5.129:2181
+  scan:
+    base-packages: com.zzt.pay
+  consumer:
+    check: false
+    timeout: 50000
+    retries: 0
+  config-center:
+    timeout: 5000

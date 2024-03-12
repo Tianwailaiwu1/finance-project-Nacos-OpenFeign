@@ -1,0 +1,51 @@
+#服务配置
+spring:
+  application:
+    name: micr-web
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+#redis配置
+  redis:
+    host: 192.168.5.129
+    port: 6379
+#端口号以及监听器配置
+server:
+  port: 8000
+  servlet:
+    context-path: /api
+    encoding:
+      enabled: true
+      charset: utf-8
+      force: true
+#Dubbo配置
+dubbo:
+  registry:
+    address: zookeeper://192.168.5.129:2181
+  scan:
+    base-packages: com.zzt.front
+  consumer:
+    check: false
+    timeout: 50000
+    retries: 0
+  config-center:
+    timeout: 5000
+
+
+aliyun:
+  #短信配置
+  sms:
+    host: https://dfsns.market.alicloudapi.com
+    path: /data/send_sms
+    method: POST
+    appcode: LTAI5tMF6bX468H1LnFJAWnY
+  realname:
+    host: https://dfidveri.market.alicloudapi.com
+    path: /verify_id_name
+    method: POST
+    appcode: LTAI5tMF6bX468H1LnFJAWnY
+
+#jwt配置
+jwt:
+  secret: ef982fa6e4a941df90ecfe7e879c8180
+
