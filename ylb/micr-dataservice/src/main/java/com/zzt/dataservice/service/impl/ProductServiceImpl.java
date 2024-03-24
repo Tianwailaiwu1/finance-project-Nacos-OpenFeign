@@ -6,13 +6,12 @@ import com.zzt.api.service.ProductService;
 import com.zzt.common.constant.ProductTypeConstant;
 import com.zzt.common.util.CommonUtil;
 import com.zzt.dataservice.mapper.ProductInfoMapper;
-import org.apache.dubbo.config.annotation.DubboService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
-
-@DubboService(interfaceClass = ProductService.class, version = "1.0")
+@Service
 public class ProductServiceImpl implements ProductService {
     @Resource
     private ProductInfoMapper productInfoMapper;

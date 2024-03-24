@@ -1,27 +1,26 @@
 package com.zzt.micrtask;
 
-import com.zzt.api.service.IncomeService;
 import com.zzt.common.util.HttpClientUtils;
-import org.apache.dubbo.config.annotation.DubboReference;
+import com.zzt.micrtask.client.IncomeServiceClient;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
+import javax.annotation.Resource;
 
 /**
  * 定义方法，表示要执行定时任务的功能
  */
 @Component("taskManager")
 public class TaskManager {
-    @DubboReference(interfaceClass = IncomeService.class, version = "1.0")
-    private IncomeService incomeService;
+    @Resource
+    private IncomeServiceClient incomeServiceClient;
 
     /**
      * 生成收益计划
      */
     @Scheduled(cron = "0 0 1 * * ?")
     public void invokeGenerateIncomePlan() {
-        incomeService.generateIncomePlan();
+        incomeServiceClient.generateIncomePlan();
     }
 
     /**
@@ -29,7 +28,7 @@ public class TaskManager {
      */
     @Scheduled(cron = "0 0 2 * * ?")
     public void invokeGenerateIncomeBack() {
-        incomeService.generateIncomeBack();
+        incomeServiceClient.generateIncomeBack();
     }
 
     /**

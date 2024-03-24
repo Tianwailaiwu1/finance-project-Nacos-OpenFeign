@@ -30,7 +30,7 @@ public class RechargeController extends BaseController {
         RespResult result = RespResult.fail();
 
         if (uid != null && uid > 0) {
-            List<RechargeRecord> records = rechargeRecordService.queryRechargeRecordById(uid, pageNo, pageSize);
+            List<RechargeRecord> records = rechargeRecordServiceClient.queryRechargeRecordById(uid, pageNo, pageSize);
             result = RespResult.ok();
             result.setList(toView(records));
         }

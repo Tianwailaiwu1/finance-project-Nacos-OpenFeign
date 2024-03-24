@@ -7,7 +7,7 @@
         <groupId>com.zzt</groupId>
         <artifactId>micr-parent</artifactId>
         <version>1.0.0</version>
-        <relativePath/>
+        <relativePath>../micr-parent/pom.xml</relativePath>
     </parent>
     <groupId>com.zzt</groupId>
     <artifactId>micr-web</artifactId>
@@ -25,28 +25,32 @@
             <groupId>com.zzt</groupId>
             <artifactId>micr-common</artifactId>
             <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
-        <!--        dubbo公共项目依赖-->
         <dependency>
             <groupId>com.zzt</groupId>
             <artifactId>micr-api</artifactId>
             <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
         <!--        Redis-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-        <!--        Dubbo起步依赖-->
         <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <!--      Zookeeper起步依赖-->
+        <!--    负载均衡器    -->
         <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-dependencies-zookeeper</artifactId>
-            <type>pom</type>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+        <!--   微服务架构中服务之间的调用 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <!--      Swagger-->
         <dependency>
@@ -85,6 +89,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>micr-web</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

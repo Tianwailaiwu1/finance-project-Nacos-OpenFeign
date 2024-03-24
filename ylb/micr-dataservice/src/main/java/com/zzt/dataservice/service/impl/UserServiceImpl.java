@@ -3,14 +3,12 @@ package com.zzt.dataservice.service.impl;
 import com.zzt.api.model.FinanceAccount;
 import com.zzt.api.model.User;
 import com.zzt.api.pojo.UserAccountInfo;
-import com.zzt.api.service.ProductService;
 import com.zzt.api.service.UserService;
 import com.zzt.common.util.CommonUtil;
 import com.zzt.dataservice.mapper.FinanceAccountMapper;
 import com.zzt.dataservice.mapper.UserMapper;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.dubbo.config.annotation.DubboService;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,7 +16,7 @@ import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@DubboService(interfaceClass = UserService.class, version = "1.0")
+@Service
 public class UserServiceImpl implements UserService {
     @Resource
     private UserMapper userMapper;
@@ -46,7 +44,6 @@ public class UserServiceImpl implements UserService {
      * @return result:0 失败     result:1 成功  result:2 手机号已存在
      */
     @Transactional(rollbackFor = Exception.class, isolation = Isolation.REPEATABLE_READ)
-//    @Transactional(rollbackFor = Exception.class)
     //开启事务设置了事务隔离级别为可重复读，保证插入数据后立马查询该数据的id主键值
     @Override
     public int userRegister(String phone, String pwd) {

@@ -17,10 +17,17 @@
     </dependencies>
     <build>
         <finalName>kq-demo</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
 <!--       资源插件-->
         <resources>
             <resource>
                 <directory>src/main/java</directory>
+                <filtering>true</filtering>
                 <includes>
                     <include>**/*.pfx</include>
                 </includes>

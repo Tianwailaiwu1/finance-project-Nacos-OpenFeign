@@ -5,14 +5,13 @@ import com.zzt.api.model.FinanceAccount;
 import com.zzt.api.model.ProductInfo;
 import com.zzt.api.pojo.BidInfoProduct;
 import com.zzt.api.service.InvestService;
-import com.zzt.api.service.PlatBaseInfoService;
 import com.zzt.common.constant.ProductBidStatusConstant;
 import com.zzt.common.constant.ProductStatusConstant;
 import com.zzt.common.util.CommonUtil;
 import com.zzt.dataservice.mapper.BidInfoMapper;
 import com.zzt.dataservice.mapper.FinanceAccountMapper;
 import com.zzt.dataservice.mapper.ProductInfoMapper;
-import org.apache.dubbo.config.annotation.DubboService;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
@@ -20,8 +19,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-@DubboService(interfaceClass = InvestService.class, version = "1.0")
+@Service
 public class InvestServiceImpl implements InvestService {
     @Resource
     private BidInfoMapper bidInfoMapper;

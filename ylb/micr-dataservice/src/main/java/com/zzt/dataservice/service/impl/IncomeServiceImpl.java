@@ -4,7 +4,6 @@ import com.zzt.api.model.BidInfo;
 import com.zzt.api.model.IncomeRecord;
 import com.zzt.api.model.ProductInfo;
 import com.zzt.api.service.IncomeService;
-import com.zzt.api.service.InvestService;
 import com.zzt.common.constant.IncomeStatusConstant;
 import com.zzt.common.constant.ProductStatusConstant;
 import com.zzt.common.constant.ProductTypeConstant;
@@ -13,7 +12,7 @@ import com.zzt.dataservice.mapper.FinanceAccountMapper;
 import com.zzt.dataservice.mapper.IncomeRecordMapper;
 import com.zzt.dataservice.mapper.ProductInfoMapper;
 import org.apache.commons.lang3.time.DateUtils;
-import org.apache.dubbo.config.annotation.DubboService;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
@@ -23,7 +22,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-@DubboService(interfaceClass = IncomeService.class, version = "1.0")
+@Service
 public class IncomeServiceImpl implements IncomeService {
     @Resource
     private ProductInfoMapper productInfoMapper;

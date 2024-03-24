@@ -72,7 +72,7 @@ public class InvestController extends BaseController {
 
         try {
             //参数正确
-            investResult = investService.investProduct(uid, productId, money);
+            investResult = investServiceClient.investProduct(uid, productId, money);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -111,7 +111,7 @@ public class InvestController extends BaseController {
      * @param money
      */
     private void modifyInvestRank(Integer uid, BigDecimal money) {
-        User user = userService.queryById(uid);
+        User user = userServiceClient.queryById(uid);
         if (user != null) {
             //更新redis中的投资排行榜信息
             String key = RedisKey.KEY_INVEST_RANK;

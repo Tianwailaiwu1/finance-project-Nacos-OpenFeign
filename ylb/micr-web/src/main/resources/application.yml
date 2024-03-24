@@ -5,9 +5,20 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.88.128:8848
+        username: nacos
+        password: 203417
+  management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 #redis配置
   redis:
-    host: 192.168.5.129
+    host: 192.168.88.128
     port: 6379
 #端口号以及监听器配置
 server:
@@ -18,18 +29,6 @@ server:
       enabled: true
       charset: utf-8
       force: true
-#Dubbo配置
-dubbo:
-  registry:
-    address: zookeeper://192.168.5.129:2181
-  scan:
-    base-packages: com.zzt.front
-  consumer:
-    check: false
-    timeout: 50000
-    retries: 0
-  config-center:
-    timeout: 5000
 
 
 aliyun:

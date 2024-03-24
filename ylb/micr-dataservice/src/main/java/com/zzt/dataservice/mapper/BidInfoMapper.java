@@ -28,7 +28,7 @@ public interface BidInfoMapper {
     /**
      * 根据产品id查询该产品的多个投资记录
      *
-     * @param id
+     * @param productId
      * @return
      */
     List<BidInfo> selectBidByProductId(@Param("productId") Integer productId);

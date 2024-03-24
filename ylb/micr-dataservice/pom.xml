@@ -7,7 +7,7 @@
         <groupId>com.zzt</groupId>
         <artifactId>micr-parent</artifactId>
         <version>1.0.0</version>
-        <relativePath/>
+        <relativePath>../micr-parent/pom.xml</relativePath>
     </parent>
 
 
@@ -26,23 +26,17 @@
             <groupId>com.zzt</groupId>
             <artifactId>micr-common</artifactId>
             <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
-        <!--        dubbo公共项目依赖-->
         <dependency>
             <groupId>com.zzt</groupId>
             <artifactId>micr-api</artifactId>
             <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
-        <!--        Dubbo起步依赖-->
         <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-        </dependency>
-        <!--      Zookeeper起步依赖-->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-dependencies-zookeeper</artifactId>
-            <type>pom</type>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -59,6 +53,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -73,6 +71,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>micr-dataservice</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

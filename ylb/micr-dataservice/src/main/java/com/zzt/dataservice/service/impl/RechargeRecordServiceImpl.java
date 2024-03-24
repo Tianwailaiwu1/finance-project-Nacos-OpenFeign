@@ -6,15 +6,14 @@ import com.zzt.common.constant.RechargeRecordStatusConstant;
 import com.zzt.common.util.CommonUtil;
 import com.zzt.dataservice.mapper.FinanceAccountMapper;
 import com.zzt.dataservice.mapper.RechargeRecordMapper;
-import org.apache.dubbo.config.annotation.DubboService;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-
-@DubboService(interfaceClass = RechargeRecordService.class, version = "1.0")
+@Service
 public class RechargeRecordServiceImpl implements RechargeRecordService {
     @Resource
     private RechargeRecordMapper rechargeRecordMapper;

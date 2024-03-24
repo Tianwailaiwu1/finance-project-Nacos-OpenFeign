@@ -58,7 +58,7 @@ public class UserController extends BaseController {
             }
 
             // Redis 中不存在，查询数据库
-            User user = userService.queryByPhone(phone);
+            User user = userServiceClient.queryByPhone(phone);
             if (user == null) {
                 //表示手机号没有被注册过，可以被注册
                 result = RespResult.ok();
@@ -106,7 +106,7 @@ public class UserController extends BaseController {
         }
 
         // 执行用户注册
-        int registerResult = userService.userRegister(phone, pwd);
+        int registerResult = userServiceClient.userRegister(phone, pwd);
         if (registerResult == 1) {
             // 注册成功，返回成功信息
             return RespResult.ok();
@@ -152,7 +152,7 @@ public class UserController extends BaseController {
         }
 
         //参数正确后，执行用户登录逻辑
-        User user = userService.userLogin(phone, pwd);
+        User user = userServiceClient.userLogin(phone, pwd);
         if (user != null) {
             //登录成功,生成token
             Map<String, Object> data = new HashMap<>();
@@ -238,7 +238,7 @@ public class UserController extends BaseController {
         //验证参数,uid
         if (uid != null && uid > 0) {
             //查询用户信息
-            UserAccountInfo userAccountInfo = userService.queryUserAllInfo(uid);
+            UserAccountInfo userAccountInfo = userServiceClient.queryUserAllInfo(uid);
             //判断用户信息是否为空
             if (userAccountInfo == null) {
                 //用户信息不存在

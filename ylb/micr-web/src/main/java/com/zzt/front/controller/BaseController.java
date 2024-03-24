@@ -1,7 +1,7 @@
 package com.zzt.front.controller;
 
-import com.zzt.api.service.*;
-import org.apache.dubbo.config.annotation.DubboReference;
+import com.zzt.front.client.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import javax.annotation.Resource;
@@ -19,26 +19,26 @@ public class BaseController {
     /**
      * 平台基本信息服务
      */
-    @DubboReference(interfaceClass = PlatBaseInfoService.class, version = "1.0")
-    protected PlatBaseInfoService platBaseInfoService;
+    @Autowired
+    protected PlatBaseInfoServiceClient platBaseInfoServiceClient;
     /**
      * 产品服务
      */
-    @DubboReference(interfaceClass = ProductService.class, version = "1.0")
-    protected ProductService productService;
+    @Autowired
+    protected ProductServiceClient productServiceClient;
     /**
      * 产品详情服务
      */
-    @DubboReference(interfaceClass = InvestService.class, version = "1.0")
-    protected InvestService investService;
+    @Autowired
+    protected InvestServiceClient investServiceClient;
     /**
      * 用户信息服务
      */
-    @DubboReference(interfaceClass = UserService.class, version = "1.0")
-    protected UserService userService;
+    @Autowired
+    protected UserServiceClient userServiceClient;
     /**
      * 充值服务
      */
-    @DubboReference(interfaceClass = RechargeRecordService.class, version = "1.0")
-    protected RechargeRecordService rechargeRecordService;
+    @Autowired
+    protected RechargeRecordServiceClient rechargeRecordServiceClient;
 }

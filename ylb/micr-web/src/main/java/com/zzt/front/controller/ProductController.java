@@ -11,7 +11,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @CrossOrigin
@@ -28,7 +27,7 @@ public class ProductController extends BaseController {
     @GetMapping("/product/index")
     public RespResult queryProductIndex() {
         RespResult respResult = RespResult.ok();
-        MultiProduct multiProduct = productService.queryIndexPageProducts();
+        MultiProduct multiProduct = productServiceClient.queryIndexPageProducts();
         respResult.setData(multiProduct);
         return respResult;
     }
@@ -49,10 +48,10 @@ public class ProductController extends BaseController {
             pageNo = CommonUtil.defaultPageNo(pageNo);
             pageSize = CommonUtil.defaultPageSize(pageSize);
             //分页处理，记录总条数
-            Integer recordNums = productService.queryRecordNumsByType(pType);
+            Integer recordNums = productServiceClient.queryRecordNumsByType(pType);
             if (recordNums > 0) {
                 //产品集合
-                List<ProductInfo> productInfos = productService.queryByTypeLimit(pType, pageNo, pageSize);
+                List<ProductInfo> productInfos = productServiceClient.queryByTypeLimit(pType, pageNo, pageSize);
                 result = RespResult.ok();
                 result.setList(productInfos);
                 //分页信息
@@ -78,10 +77,10 @@ public class ProductController extends BaseController {
         RespResult result = RespResult.fail();
         if (id != null && id > 0) {
             //查询产品详情
-            ProductInfo productInfo = productService.queryById(id);
+            ProductInfo productInfo = productServiceClient.queryById(id);
             if (productInfo != null) {
                 //查询该产品的投资记录(5条)
-                List<BidInfoProduct> bidInfoProductList = investService.queryBidListByProductId(id, 1, 5);
+                List<BidInfoProduct> bidInfoProductList = investServiceClient.queryBidListByProductId(id, 1, 5);
                 //查询成功
                 result = RespResult.ok();
                 //包装产品详情

@@ -25,7 +25,7 @@
         select
         <include refid="Base_Column_List"/>
         from u_user
-        where id = #{id,jdbcType=INTEGER}
+        where id = #{uid,jdbcType=INTEGER}
     </select>
     <select id="selectByPhone" resultMap="BaseResultMap">
         select

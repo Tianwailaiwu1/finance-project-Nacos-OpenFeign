@@ -5,17 +5,17 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.zzt.api.model.RechargeRecord;
 import com.zzt.api.model.User;
-import com.zzt.api.service.RechargeRecordService;
-import com.zzt.api.service.UserService;
 import com.zzt.common.constant.RechargeRecordStatusConstant;
 import com.zzt.common.constant.RedisKey;
+import com.zzt.pay.client.RechargeRecordClient;
+import com.zzt.pay.client.UserServiceClient;
 import com.zzt.pay.service.KuaiQianService;
 import com.zzt.pay.util.HttpUtil;
 import com.zzt.pay.util.Pkipair;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
-import org.apache.commons.lang3.time.DateUtils;
-import org.apache.dubbo.config.annotation.DubboReference;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -32,10 +32,13 @@ public class KuaiQianServiceImpl implements KuaiQianService {
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
-    @DubboReference(interfaceClass = UserService.class, version = "1.0")
-    private UserService userService;
-    @DubboReference(interfaceClass = RechargeRecordService.class, version = "1.0")
-    private RechargeRecordService rechargeRecordService;
+    @Autowired
+    @Lazy(true)
+    private UserServiceClient userServiceClient;
+
+    @Autowired
+    @Lazy(true)
+    private RechargeRecordClient rechargeRecordClient;
 
     /**
      * 根据用户id获取用户信息
@@ -45,7 +48,7 @@ public class KuaiQianServiceImpl implements KuaiQianService {
      */
     @Override
     public User queryUser(Integer uid) {
-        User user = userService.queryById(uid);
+        User user = userServiceClient.queryById(uid);
         return user;
     }
 
@@ -70,7 +73,7 @@ public class KuaiQianServiceImpl implements KuaiQianService {
         /**
          * 使用内网穿透技术接收支付结果
          */
-        String bgUrl = "http://6ff3169e.r24.cpolar.top/pay/kq/receive/notify";
+        String bgUrl = "http://2ae95097.r28.cpolar.top/pay/kq/receive/notify";
         //网关版本，固定值：v2.0,该参数必填。
         String version = "v2.0";
         //语言种类，1代表中文显示，2代表英文显示。默认为1,该参数必填。
@@ -99,7 +102,6 @@ public class KuaiQianServiceImpl implements KuaiQianService {
         String orderTime = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new java.util.Date());
         //快钱时间戳，格式：yyyyMMddHHmmss，如：20071117020101， 可以为空
         String orderTimestamp = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new java.util.Date());
-        ;
         //商品名称，可以为空。
         String productName = "HarmonyOS";
         //商品数量，可以为空。
@@ -107,7 +109,7 @@ public class KuaiQianServiceImpl implements KuaiQianService {
         //商品代码，可以为空。
         String productId = "10000";
         //商品描述，可以为空。
-        String productDesc = "鸿蒙遥遥领先";
+        String productDesc = "";
         //扩展字段1，商户可以传递自己需要的参数，支付完快钱会原值返回，可以为空。
         String ext1 = "";
         //扩展自段2，商户可以传递自己需要的参数，支付完快钱会原值返回，可以为空。
@@ -180,7 +182,7 @@ public class KuaiQianServiceImpl implements KuaiQianService {
         record.setRechargeStatus(RechargeRecordStatusConstant.RECHARGE_STATUS_PROCESSING);
         record.setRechargeTime(new Date());
         record.setUid(uid);
-        int rows = rechargeRecordService.addRechargeRecord(record);
+        int rows = rechargeRecordClient.addRechargeRecord(record);
         return rows > 0;
     }
 
@@ -270,7 +272,7 @@ public class KuaiQianServiceImpl implements KuaiQianService {
                 //商户号错误
                 System.out.println("订单" + orderId + "商户号有误");
             }
-            int rechargeResult = rechargeRecordService.handleKqNotify(orderId, payAmount, payResult);
+            int rechargeResult = rechargeRecordClient.handleKqNotify(orderId, payAmount, payResult);
         } else {
             System.out.println("订单" + orderId + "验签失败，不能处理");
         }
@@ -365,7 +367,7 @@ public class KuaiQianServiceImpl implements KuaiQianService {
                     JSONObject jsonObject = array.getJSONObject(0);
                     if (jsonObject != null) {
                         //处理充值结果，和异步通知一样
-                        rechargeRecordService.handleKqNotify(jsonObject.getString("orderId"), jsonObject.getString("payAmount"), jsonObject.getString("payResult"));
+                        rechargeRecordClient.handleKqNotify(jsonObject.getString("orderId"), jsonObject.getString("payAmount"), jsonObject.getString("payResult"));
                     }
                 }
             }

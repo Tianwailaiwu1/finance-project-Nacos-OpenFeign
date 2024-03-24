@@ -9,19 +9,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9682eadc-5e1f-42d9-bdfe-0c8d2079658c" name="Changes" comment="" />
+    <list default="true" id="9682eadc-5e1f-42d9-bdfe-0c8d2079658c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../front/licai" beforeDir="false" afterPath="$PROJECT_DIR$/../front/licai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kq-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kq-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-api/target/test-classes/com/zzt/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/HttpUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/HttpUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/JwtTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/RealNameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/MicrDataserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/MicrDataserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/BidInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/BidInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/IncomeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/IncomeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/InvestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/InvestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/PlatBaseInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/PlatBaseInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/RechargeRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/RechargeRecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-pay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/MicrPayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/MicrPayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/service/impl/KuaiQianServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/service/impl/KuaiQianServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-pay/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/MicrTaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/MicrTaskApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-task/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/MicrWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/MicrWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/InvestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/InvestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/PlatBaseInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/PlatBaseInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/RechargeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/RechargeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/service/impl/RealNameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/service/impl/RealNameServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,6 +89,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="2bZCXZSThSyaCpVbS4JXXFyiaOD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,7 +108,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/finance-project/ylb/micr-pay/src/main/java/com/zzt/pay/util&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zzt/Downloads/MybatisX-1.5.5.zip&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,7 +116,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;843b6c3d026da6363bbcbbe22a87ca5a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -89,13 +137,16 @@
       <recent name="E:\finance-project\ylb\micr-dataservice\src\main\resources" />
       <recent name="E:\finance-project\ylb\ready-mapper" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zzt.micrtask" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zzt.pay.util" />
       <recent name="com.zzt" />
       <recent name="com.zzt.front.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MicrPayApplication">
+  <component name="RunManager" selected="Spring Boot.MicrDataserviceApplication">
     <configuration name="MicrDataserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="micr-dataservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzt.dataservice.MicrDataserviceApplication" />
@@ -150,8 +201,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MicrPayApplication" />
         <item itemvalue="Spring Boot.MicrWebApplication" />
+        <item itemvalue="Spring Boot.MicrPayApplication" />
         <item itemvalue="Spring Boot.MicrTaskApplication" />
       </list>
     </recent_temporary>
@@ -228,10 +279,40 @@
       <workItem from="1710157794044" duration="1915000" />
       <workItem from="1710207798323" duration="6502000" />
       <workItem from="1710231233949" duration="6154000" />
+      <workItem from="1710248426936" duration="1200000" />
+      <workItem from="1710340172650" duration="405000" />
+      <workItem from="1710340767234" duration="483000" />
+      <workItem from="1710341355946" duration="12000" />
+      <workItem from="1710341923787" duration="992000" />
+      <workItem from="1710382038775" duration="165000" />
+      <workItem from="1710393286934" duration="36000" />
+      <workItem from="1710901869920" duration="2080000" />
+      <workItem from="1711080874034" duration="291000" />
+      <workItem from="1711086446060" duration="691000" />
+      <workItem from="1711088952054" duration="387000" />
+      <workItem from="1711090140919" duration="937000" />
+      <workItem from="1711114426005" duration="166000" />
+      <workItem from="1711115987561" duration="134000" />
+      <workItem from="1711164688358" duration="9143000" />
+      <workItem from="1711186379254" duration="3614000" />
+      <workItem from="1711203019059" duration="5676000" />
+      <workItem from="1711237022091" duration="16525000" />
+      <workItem from="1711256962322" duration="2113000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/service/impl/KuaiQianServiceImpl.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

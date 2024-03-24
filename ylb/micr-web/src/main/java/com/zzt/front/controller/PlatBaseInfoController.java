@@ -1,6 +1,5 @@
 package com.zzt.front.controller;
 
-import com.zzt.api.model.User;
 import com.zzt.api.pojo.BaseInfo;
 import com.zzt.common.constant.RedisKey;
 import com.zzt.front.pojo.RespResult;
@@ -38,7 +37,7 @@ public class PlatBaseInfoController extends BaseController {
             return respResult;
         }
         // Redis 中不存在，查询数据库,调用远程服务,并放入redis中
-        BaseInfo baseInfo = platBaseInfoService.queryPlatBaseInfo();
+        BaseInfo baseInfo = platBaseInfoServiceClient.queryPlatBaseInfo();
         RespResult respResult = RespResult.ok();
         respResult.setData(baseInfo);
         //将平台数据信息放入redis

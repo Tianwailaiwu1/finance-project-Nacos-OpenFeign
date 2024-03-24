@@ -1,14 +1,12 @@
 package com.zzt.front.service.impl;
 
 import com.zzt.api.model.User;
-import com.zzt.api.service.UserService;
-import com.zzt.common.util.CommonUtil;
 import com.zzt.front.SmsUtils.HttpUtils;
+import com.zzt.front.client.UserServiceClient;
 import com.zzt.front.config.AliyunRealNameConfig;
 import com.zzt.front.service.RealNameService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;
-import org.apache.http.util.EntityUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -20,7 +18,7 @@ public class RealNameServiceImpl implements RealNameService {
     @Resource
     private AliyunRealNameConfig aliyunRealNameConfig;
     @Resource
-    private UserService userService;
+    private UserServiceClient userServiceClient;
 
     /**
      * 实名认证
@@ -50,7 +48,7 @@ public class RealNameServiceImpl implements RealNameService {
             //获取response的body
             //System.out.println(EntityUtils.toString(response.getEntity()));
             //将姓名与身份证号更新进数据库
-            result = userService.modifyRealName(phone, name, idCard);
+            result = userServiceClient.modifyRealName(phone, name, idCard);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -67,7 +65,7 @@ public class RealNameServiceImpl implements RealNameService {
     @Override
     public boolean checkIsRealName(String phone) {
         //向数据库查询该手机号的姓名与身份证号
-        User user = userService.queryByPhone(phone);
+        User user = userServiceClient.queryByPhone(phone);
         //验证该手机号查出来的用户信息中的姓名与身份证号是否为空
         if (StringUtils.isNotBlank(user.getName()) && StringUtils.isNotBlank(user.getIdCard())) {
             //姓名和身份证号都不为空,该手机号已经实名认证了

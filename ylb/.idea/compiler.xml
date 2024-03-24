@@ -24,6 +24,7 @@
       <module name="micr-pay" target="1.8" />
       <module name="micr-task" target="1.8" />
       <module name="micr-web" target="1.8" />
+      <module name="mybatisX-demo" target="1.5" />
       <module name="ready-mapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>

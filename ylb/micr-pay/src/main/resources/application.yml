@@ -9,19 +9,13 @@ spring:
     cache: false
   application:
     name: micr-pay
-#redis配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.88.128:8848
+        username: nacos
+        password: 203417
+  #redis配置
   redis:
-    host: 192.168.5.129
+    host: 192.168.88.128
     port: 6379
-#Dubbo配置
-dubbo:
-  registry:
-    address: zookeeper://192.168.5.129:2181
-  scan:
-    base-packages: com.zzt.pay
-  consumer:
-    check: false
-    timeout: 50000
-    retries: 0
-  config-center:
-    timeout: 5000
