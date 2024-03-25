@@ -20,6 +20,8 @@ micr-pay:SpringBoot项目向外提供web服务，支付功能服务 端口号:90
 
 micr-web:SpringBoot项目向外提供web服务，提供基本的接口服务 端口号:8000
 
+micr-gateway:SpringBoot项目向外提供web服务,提供网关服务，进行身份检验以及路由转发等，所有服务的入口 端口号:8100
+
 注意:在micr-pay服务中，service实现类中，需要将url改为该服务进行内网穿透的地址
 
 ![image](https://github.com/Tianwailaiwu1/finance-project-Nacos-OpenFeign/assets/120568732/308acc88-0354-4218-bd1c-a398b832b08a)
