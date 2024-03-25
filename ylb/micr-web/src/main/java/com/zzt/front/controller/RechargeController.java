@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin
 @Api(tags = "充值功能")
 @RestController
 @RequestMapping("/v1")

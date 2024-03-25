@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="micr-api" />
+        <module name="micr-gateway" />
         <module name="micr-task" />
         <module name="micr-web" />
         <module name="micr-dataservice" />
@@ -20,6 +21,7 @@
       <module name="micr-api" target="1.8" />
       <module name="micr-common" target="1.8" />
       <module name="micr-dataservice" target="1.8" />
+      <module name="micr-gateway" target="1.8" />
       <module name="micr-parent" target="1.8" />
       <module name="micr-pay" target="1.8" />
       <module name="micr-task" target="1.8" />
@@ -33,6 +35,7 @@
       <module name="micr-api" options="-parameters" />
       <module name="micr-common" options="-parameters" />
       <module name="micr-dataservice" options="-parameters" />
+      <module name="micr-gateway" options="-parameters" />
       <module name="micr-parent" options="-parameters" />
       <module name="micr-pay" options="-parameters" />
       <module name="micr-task" options="-parameters" />

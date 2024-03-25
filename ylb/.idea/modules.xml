@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/micr-api.iml" filepath="$PROJECT_DIR$/micr-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/micr-common.iml" filepath="$PROJECT_DIR$/micr-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/micr-dataservice/micr-dataservice.iml" filepath="$PROJECT_DIR$/micr-dataservice/micr-dataservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micr-gateway/micr-gateway.iml" filepath="$PROJECT_DIR$/micr-gateway/micr-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/micr-parent.iml" filepath="$PROJECT_DIR$/micr-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/micr-pay/micr-pay.iml" filepath="$PROJECT_DIR$/micr-pay/micr-pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/micr-task/micr-task.iml" filepath="$PROJECT_DIR$/micr-task/micr-task.iml" />

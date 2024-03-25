@@ -24,6 +24,7 @@
         <module>../micr-common</module>
         <module>../micr-task</module>
         <module>../micr-pay</module>
+        <module>../micr-gateway</module>
     </modules>
 
     <properties>

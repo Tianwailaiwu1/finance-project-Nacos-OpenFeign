@@ -10,3 +10,5 @@ spring:
         password: 203417
 server:
   port: 8086
+  servlet:
+    context-path: /task

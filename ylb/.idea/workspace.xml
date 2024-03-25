@@ -11,46 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9682eadc-5e1f-42d9-bdfe-0c8d2079658c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../front/licai" beforeDir="false" afterPath="$PROJECT_DIR$/../front/licai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kq-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kq-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-api/target/test-classes/com/zzt/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/HttpUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/HttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/JwtTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-common/target/test-classes/com/zzt/RealNameTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/MicrDataserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/MicrDataserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/BidInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/BidInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/IncomeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/IncomeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/InvestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/InvestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/PlatBaseInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/PlatBaseInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/RechargeRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/RechargeRecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/java/com/zzt/dataservice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-dataservice/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-dataservice/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kq-demo/target/classes/Util/10012140356.pfx" beforeDir="false" afterPath="$PROJECT_DIR$/kq-demo/target/classes/Util/10012140356.pfx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micr-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-pay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/MicrPayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/MicrPayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/service/impl/KuaiQianServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/src/main/java/com/zzt/pay/service/impl/KuaiQianServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-pay/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-pay/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-task/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/MicrTaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/MicrTaskApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/src/main/java/com/zzt/micrtask/TaskManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micr-task/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/MicrWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/MicrWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/InvestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/InvestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/PlatBaseInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/PlatBaseInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/RechargeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/RechargeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/SmsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/service/impl/RealNameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/service/impl/RealNameServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/settings/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/settings/WebMvcConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,35 +67,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zzt/Downloads/MybatisX-1.5.5.zip&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;843b6c3d026da6363bbcbbe22a87ca5a&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/finance-project/ylb",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "spring.configuration.checksum": "2bbde39c58c93211320f75e772ee40a5",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -146,10 +116,23 @@
       <recent name="com.zzt.front.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MicrDataserviceApplication">
+  <component name="RunManager" selected="Spring Boot.MicrGatewayApplication">
     <configuration name="MicrDataserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="micr-dataservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzt.dataservice.MicrDataserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicrGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="micr-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzt.micrgateway.MicrGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzt.micrgateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,6 +178,7 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.MicrDataserviceApplication" />
+      <item itemvalue="Spring Boot.MicrGatewayApplication" />
       <item itemvalue="Spring Boot.MicrPayApplication" />
       <item itemvalue="Spring Boot.MicrTaskApplication" />
       <item itemvalue="Spring Boot.MicrWebApplication" />
@@ -202,8 +186,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MicrWebApplication" />
-        <item itemvalue="Spring Boot.MicrPayApplication" />
+        <item itemvalue="Spring Boot.MicrGatewayApplication" />
         <item itemvalue="Spring Boot.MicrTaskApplication" />
+        <item itemvalue="Spring Boot.MicrPayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +282,12 @@
       <workItem from="1711186379254" duration="3614000" />
       <workItem from="1711203019059" duration="5676000" />
       <workItem from="1711237022091" duration="16525000" />
-      <workItem from="1711256962322" duration="2113000" />
+      <workItem from="1711256962322" duration="2289000" />
+      <workItem from="1711259816973" duration="10000" />
+      <workItem from="1711259851199" duration="32000" />
+      <workItem from="1711271775452" duration="154000" />
+      <workItem from="1711337561940" duration="2685000" />
+      <workItem from="1711345048038" duration="4275000" />
     </task>
     <servers />
   </component>

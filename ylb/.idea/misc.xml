@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/micr-task/pom.xml" />
         <option value="$PROJECT_DIR$/kq-demo/pom.xml" />
         <option value="$PROJECT_DIR$/micr-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/micr-gateway/pom.xml" />
       </list>
     </option>
   </component>

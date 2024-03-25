@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin
+
 @Api(tags = "理财产品功能")
 @RestController
 @RequestMapping("/v1")

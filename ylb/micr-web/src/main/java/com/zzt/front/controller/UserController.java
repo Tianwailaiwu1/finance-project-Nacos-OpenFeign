@@ -23,7 +23,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-@CrossOrigin
 @Api(tags = "用户功能")
 @RestController
 @RequestMapping("/v1")

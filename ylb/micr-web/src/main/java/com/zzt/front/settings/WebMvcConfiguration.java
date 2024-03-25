@@ -3,7 +3,6 @@ package com.zzt.front.settings;
 import com.zzt.front.interceptor.TokenInterceptor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -25,14 +24,14 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
      *
      * @param registry
      */
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        System.out.println("========addCorsMappings=========");
-        //addMapping处理的请求地址
-        registry.addMapping("/**")
-                .allowedOriginPatterns("*")
-                .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
-                .maxAge(3600)
-                .allowedHeaders("*");
-    }
+//    @Override
+//    public void addCorsMappings(CorsRegistry registry) {
+//        System.out.println("========addCorsMappings=========");
+//        //addMapping处理的请求地址
+//        registry.addMapping("/**")
+//                .allowedOriginPatterns("*")
+//                .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
+//                .maxAge(3600)
+//                .allowedHeaders("*");
+//    }
 }

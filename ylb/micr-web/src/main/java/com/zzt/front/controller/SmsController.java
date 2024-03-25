@@ -1,21 +1,19 @@
 package com.zzt.front.controller;
 
-import com.zzt.api.model.User;
-import com.zzt.common.constant.RedisKey;
 import com.zzt.common.enums.RCode;
 import com.zzt.common.util.CommonUtil;
 import com.zzt.front.pojo.RespResult;
 import com.zzt.front.service.impl.SmsCodeRegisterImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.concurrent.TimeUnit;
 
-@CrossOrigin
+
 @Api(tags = "短信业务")
 @RestController
 @RequestMapping("/v1")

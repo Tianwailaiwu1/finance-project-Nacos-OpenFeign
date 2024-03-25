@@ -1,0 +1,41 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: micr-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.88.128:8848
+        username: nacos
+        password: 203417
+    gateway:
+      routes:
+        - id: micr-dataservice
+          uri: lb://micr-dataservice
+          predicates:
+            - Path=/dataservice/**
+        - id: micr-pay
+          uri: lb://micr-pay
+          predicates:
+            - Path=/pay/**
+        - id: micr-task
+          uri: lb://micr-task
+          predicates:
+            - Path=/task/**
+        - id: micr-web
+          uri: lb://micr-web
+          predicates:
+            - Path=/api/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+            maxAge: 3600

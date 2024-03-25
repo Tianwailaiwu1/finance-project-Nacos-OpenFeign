@@ -19,7 +19,6 @@ import java.util.Set;
 /**
  * 投资功能类
  */
-@CrossOrigin
 @Api(tags = "投资理财产品")
 @RestController
 @RequestMapping("/v1")
