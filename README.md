@@ -25,3 +25,15 @@ micr-gateway:SpringBoot项目向外提供web服务,提供网关服务，进行�
 注意:在micr-pay服务中，service实现类中，需要将url改为该服务进行内网穿透的地址
 
 ![image](https://github.com/Tianwailaiwu1/finance-project-Nacos-OpenFeign/assets/120568732/308acc88-0354-4218-bd1c-a398b832b08a)
+
+nacos配置中心配置
+
+![image](https://github.com/Tianwailaiwu1/finance-project-Nacos-OpenFeign/assets/120568732/3b4e6406-551c-439d-8850-99791ff25d85)
+
+
+![image](https://github.com/Tianwailaiwu1/finance-project-Nacos-OpenFeign/assets/120568732/99d78fb4-55af-40bb-aeb0-2881f2876fc8)
+
+
+![image](https://github.com/Tianwailaiwu1/finance-project-Nacos-OpenFeign/assets/120568732/5b14a4b0-ea8c-4a85-9bd9-a7d01cac7130)
+
+
