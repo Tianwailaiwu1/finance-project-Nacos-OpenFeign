@@ -1,0 +1,28 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: micr-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.88.128:8848
+        username: nacos
+        password: 203417
+      config:
+        server-addr: 192.168.88.128:8848
+        username: nacos
+        password: 203417
+        refresh-enabled: true
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        shared-configs:
+          - data-id: gateway-routes.yaml
+          - data-id: gateway-cors.yaml
+
+
+
+
+
+
+

@@ -11,16 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9682eadc-5e1f-42d9-bdfe-0c8d2079658c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../front/licai" beforeDir="false" afterPath="$PROJECT_DIR$/../front/licai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kq-demo/target/classes/Util/10012140356.pfx" beforeDir="false" afterPath="$PROJECT_DIR$/kq-demo/target/classes/Util/10012140356.pfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-task/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-task/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/InvestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/InvestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/PlatBaseInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/PlatBaseInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/RechargeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/RechargeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/settings/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/micr-web/src/main/java/com/zzt/front/settings/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micr-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micr-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/finance-project/ylb",
+    "last_opened_file_path": "E:/crm-project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -185,9 +177,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MicrWebApplication" />
-        <item itemvalue="Spring Boot.MicrGatewayApplication" />
         <item itemvalue="Spring Boot.MicrTaskApplication" />
+        <item itemvalue="Spring Boot.MicrGatewayApplication" />
+        <item itemvalue="Spring Boot.MicrWebApplication" />
         <item itemvalue="Spring Boot.MicrPayApplication" />
       </list>
     </recent_temporary>
@@ -287,7 +279,14 @@
       <workItem from="1711259851199" duration="32000" />
       <workItem from="1711271775452" duration="154000" />
       <workItem from="1711337561940" duration="2685000" />
-      <workItem from="1711345048038" duration="4275000" />
+      <workItem from="1711345048038" duration="4879000" />
+      <workItem from="1711417869260" duration="267000" />
+      <workItem from="1711418413582" duration="57000" />
+      <workItem from="1711419683447" duration="297000" />
+      <workItem from="1711420609413" duration="609000" />
+      <workItem from="1711443218746" duration="5611000" />
+      <workItem from="1711458539797" duration="3326000" />
+      <workItem from="1711465734488" duration="469000" />
     </task>
     <servers />
   </component>
